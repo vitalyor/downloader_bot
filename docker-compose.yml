@@ -1,0 +1,16 @@
+services:
+  downloader-bot:
+    build: .
+    container_name: downloader-bot
+    # пробрасываем UID/GID текущего пользователя, чтобы не было правовых конфликтов
+    user: "${UID:-1000}:${GID:-1000}"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+      - ./cookies:/cookies
+    restart: unless-stopped
+    # полезно для диагностики сети/ДНС
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8

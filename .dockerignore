@@ -1,0 +1,10 @@
+# локальные артефакты, которые не нужны внутри образа
+.vscode
+.idea
+venv
+.venv
+__pycache__/
+*.pyc
+data/
+cookies/
+.env
