@@ -21,7 +21,6 @@ import telegram.ext
 import logging
 
 try:
-    # Optional: load .env if present
     from dotenv import load_dotenv
 
     load_dotenv()

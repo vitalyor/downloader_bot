@@ -1,4 +1,3 @@
-# bot.py
 import os, re, time, json, subprocess, tempfile, requests, logging, traceback
 from pathlib import Path
 from yt_dlp import YoutubeDL
