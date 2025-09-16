@@ -26,7 +26,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-*cookies.txt
+cookies.txt
 
 # ОС
 .DS_Store
